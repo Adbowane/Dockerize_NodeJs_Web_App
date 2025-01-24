@@ -9,6 +9,9 @@ COPY package*.json ./
 #Run npm install
 RUN npm install
 
+# Copier le fichier .env
+COPY .env .env
+
 #Bundle app souce
 COPY . .
 
